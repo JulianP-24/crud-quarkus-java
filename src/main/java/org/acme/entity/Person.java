@@ -21,6 +21,9 @@ public class Person {
     @Column(name = "Fecha_Nacimiento")
     private LocalDate fechaNacimiento;
 
+    @Column(name = "Email")
+    private String email;
+
     public Long getId() {
         return id;
     }
@@ -44,6 +47,10 @@ public class Person {
     public void setFechaNacimiento(LocalDate fechaNacimiento) {
         this.fechaNacimiento = fechaNacimiento;
     }
+
+    public String getEmail() { return email; }
+
+    public void  setEmail(String email) { this.email = email; }
 
     
 }

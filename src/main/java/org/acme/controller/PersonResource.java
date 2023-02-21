@@ -69,8 +69,9 @@ public class PersonResource {
         if (!(persona.getName().equals(person.getName()))) {
             persona.setName(person.getName());
             persona.setFechaNacimiento(person.getFechaNacimiento());
+            persona.setEmail(person.getEmail());
         } else {
-            persona.setFechaNacimiento(person.getFechaNacimiento());
+            persona.setEmail(person.getEmail());
         }
         return persona;
     }
